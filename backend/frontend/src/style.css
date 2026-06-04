@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, "Microsoft YaHei", sans-serif;
+  background: #eef2f7;
+}
+
+.app-shell {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 92px;
+  padding: 14px 20px;
+  background: #111827;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.workspace {
+  min-height: 0;
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+.file-panel {
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  overflow: auto;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.panel-title {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.empty {
+  color: #94a3b8;
+  padding: 24px 8px;
+  text-align: center;
+}
+
+.file-item {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.file-item:hover,
+.file-item.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.file-item .name {
+  display: block;
+  font-weight: 600;
+  color: #1f2937;
+  word-break: break-all;
+}
+
+.file-item .meta {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.editor-panel {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.canvas-toolbar {
+  min-height: 56px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.canvas-container {
+  flex: 1;
+  min-height: 0;
+}
+
+.stat {
+  color: #334155;
+  font-weight: 600;
+}
+
+.dirty {
+  color: #dc2626;
+  font-weight: 700;
+}
