@@ -1,0 +1,14 @@
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# .NET / backend
+backend/bin/
+backend/obj/
+backend/PcdFiles/
+
+# General
+.vs/
+*.user
+*.suo
