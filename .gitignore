@@ -8,7 +8,15 @@ backend/bin/
 backend/obj/
 backend/PcdFiles/
 
+# Data files
+pcd/
+*.meta.json
+
+# Build artifacts
+backend/build-check/
+
 # General
 .vs/
 *.user
 *.suo
+.DS_Store
